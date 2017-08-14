@@ -1,0 +1,239 @@
+/* Personal Customizations
+_____________________________________________________________________
+
+/* Played Indicator Size+Color+Shadow+Border */
+.playedIndicator {
+  font-size: 15px;
+  border-radius: 3px;
+  background: rgba(153, 0, 0, 0.75);
+  height: 18px;
+  width: 30px;
+  top: 3px;
+  right: 3px;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #330000;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.9); }
+
+/* My Media Image Size */
+.smallBackdropCard {width: 20% !important;}
+
+/* --- Increase Home Page folder size --- */
+div.verticalSection.section0 .smallBackdropCard {
+  	width: 20%; }
+
+div.verticalSection.section2 .card {
+  	width: 16.5%;  }
+
+/* --- Modify the backgrounds for poster card views --- */
+div.cardBox.visualCardBox {
+  background-color: rgba(0, 0, 0, 0.33) !important; }
+
+/* Glow for media item cards */
+a.cardContent.mediaItem {
+  border: 1px solid rgba(153, 0, 0, .5);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px rgba(153, 0, 0, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px rgba(153, 0, 0, .6); }
+
+
+/* --- Active Devices: No more white username box --- */
+div.card.activeSession > div > div:nth-child(2) {
+  border-radius: 3px;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #000;
+  background: rgba(0, 0, 0, 0.10) !important; }
+
+/* Spinning loading circle */
+.paper-spinner-0 .layer-1.paper-spinner, .paper-spinner-0 .layer-2.paper-spinner, .paper-spinner-0 .layer-3.paper-spinner, .paper-spinner-0 .layer-4.paper-spinner {
+  border-color: #770000; }
+
+/* Color ripple when selecting and unselecting checkboxes */
+#ink[checked].paper-checkbox {
+  color: #333 }
+
+#ink.paper-checkbox {
+  color: #990000 }
+
+/* Ripple effect when clicking a collapsible button (eg: "Automatic Updates" under "Settings")*/
+div.ripple-effect {
+  color: #000; }
+
+/* Top bar add gradient*/
+.libraryViewNav {
+  background-color: rgba(16,16,16,.75) !important;
+  background: -moz-linear-gradient(top, rgba(16,16,16,.75) 0%, rgba(0,0,0,.35) 100%);
+  background: -webkit-linear-gradient(top, rgba(16,16,16,.75) 0%,rgba(0,0,0,.35) 100%);
+  background: linear-gradient(to bottom, rgba(16,16,16,.75) 0%,rgba(0,0,0,.35) 100%); }
+
+
+
+/* ---------------------------------------------------------------------
+   Custom login page
+   --------------------------------------------------------------------- */
+
+/* --- Remove the Emby Logo and text from Login Screen --- */
+.logoLibraryMenuButtonText {
+	display: none !important;
+}
+
+img[src*="css/images/logo.png"] {
+	display: none;
+}
+
+img[src*="css/images/mblogoicon.png"] {
+	display: none;
+}
+
+.imgLogoIcon {
+	display: none;
+}
+
+
+
+/* ---------------------------------------------------------------------
+   Alert Box On Login Page - Credit: Jambercob
+   --------------------------------------------------------------------- */
+
+/* The alert message box */
+.alert {
+    padding: 4px;
+    background-color: #330000; /* Red */
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #000;
+}
+
+/* The courtesy message box */
+.message {
+    padding: 4px;
+    background-color: #003300; /* Green */
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #000;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: #191919;
+}
+
+/* This section should be copied in to the "Login disclaimer" field
+
+<div class="message">   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> Please consider donating via <a href="http://www.paypal.me/user" target="_blank"><u><b><font color=#ccc>PayPal</font></b></u></a> to help with hosting costs.</div>
+
+<div class="alert">   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><b>ATTENTION:</b> Server will be down for upgrades on <b>Monday, April 1st</b> around <b>8:30pm</b>. Downtime shouldn't be any longer than 10 minutes.</div>
+
+*/
+
+
+
+/* ---------------------------------------------------------------------
+   Alphabet Picker
+   --------------------------------------------------------------------- */
+
+.alphabetPicker {
+    bottom: 70px !important;
+}
+
+.alphaPicker-vertical {
+	font-size: 90%;
+	color: #990000;
+	background-color: rgba(16, 16, 16, .75) !important;
+	background: -moz-linear-gradient(top, rgba(16, 16, 16, .75) 0%, rgba(16, 16, 16, .5) 100%);
+	background: -webkit-linear-gradient(top, rgba(16, 16, 16, .75) 0%, rgba(16, 16, 16, .5) 100%);
+	background: linear-gradient(to bottom, rgba(16, 16, 16, .75) 0%, rgba(16, 16, 16, .5) 100%);
+	border: 2px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #050505;
+}
+
+
+
+/* ---------------------------------------------------------------------
+   Pop-up Dialogs
+   --------------------------------------------------------------------- */
+
+.promptDialogButton,
+.actionSheetScroller,
+button.btnPromptExit.emby-button,
+button.btnSubmit.emby-button,
+button.btnCancel.emby-button {
+	color: #990000 !important;
+	background: transparent !important;
+}
+
+button.actionSheetMenuItem[is="emby-button"]:hover {
+	color: #9b9b9b !important;
+	background-color: transparent !important;
+}
+
+.promptDialogButton:active,
+button.actionSheetMenuItem[is="emby-button"]:active,
+button.btnPromptExit.emby-button:active,
+button.btnSubmit.emby-button:active,
+button.btnCancel.emby-button:active {
+	color: #660000 !important;
+}
+
+
+/* ---------------------------------------------------------------------
+   Progress Indicator
+   --------------------------------------------------------------------- */
+
+/*Firefox Focus*/
+.mdl-slider:focus::-moz-range-thumb {
+	box-shadow: 0 0 0 10px rgba(232, 17, 35, .26) !important;
+}
+
+
+/*Chrome Focus*/
+.mdl-slider:focus::-webkit-slider-thumb {
+	-webkit-box-shadow: 0 0 0 10px rgba(232, 17, 35, .26);
+	box-shadow: 0 0 0 10px rgba(232, 17, 35, .26) !important;
+}
+
+
+/*FireFox*/
+.mdl-slider::-moz-range-thumb {
+	background: #990000 !important;
+}
+
+.mdl-slider::-moz-range-progress {
+	background: #990000 !important;
+}
+
+progress::-moz-progress-bar {
+	background: #990000 !important;
+}
+
+.mdl-slider::-ms-fill-lower {
+	background: #990000 !important;
+}
+
+/* ---------------------------------------------------------------------
+
+   --------------------------------------------------------------------- */

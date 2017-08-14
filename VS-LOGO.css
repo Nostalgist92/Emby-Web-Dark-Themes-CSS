@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------
+   Personal Customizations
+   ------------------------------------------------------------------- */
+
+
+/* ------------------
+   Custom login page
+   ------------------ */
+
+/* --- Add our own logo and modify sizes --- */
+#loginPage {
+  padding-top: 95px; }
+
+#loginPage:before {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5px;
+  content: " ";
+  background: url("https://images.vengefulsyndicate.com/VSBanner2.png");
+  background-size: 100% 100%;
+  width: 700px;
+  height: 175px; }
+
+/* --- Uncomment if you wish to add a second image at  the bottom of the page --- */
+/* <-
+#loginPage:after {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1000px;
+    content: " ";
+    background: url(https://images.vengefulsyndicate.com/VSLogo.png);
+    background-size: 100% 100%;
+    width: 125px;
+    height: 125px;
+}
+-> */
