@@ -9,7 +9,7 @@
 
 /* --- Add our own logo and modify sizes --- */
 #loginPage {
-  padding-top: 175px; }
+  padding-top: 175px !important; }
 
 #loginPage:before {
   position: absolute;
@@ -17,7 +17,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 40px;
+  top: 40px !important;
   content: " ";
   background: url("https://images.vengefulsyndicate.com/VSBanner2.png");
   background-size: 100% 100%;
