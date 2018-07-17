@@ -73,6 +73,10 @@ _________________________________________________________________________
 .emby-checkbox:checked + span + span + .checkboxOutline > .checkboxOutlineTick {
   background-color: #990000 !important; }
 
+.emby-checkbox:checked+span+span+.checkboxOutline>.checkboxIcon-checked {
+    background-color: #900000;
+}
+
 .emby-checkbox:checked + span + span + .checkboxOutline,
 .progressring-spiner {
   border-color: #990000 !important; }
@@ -552,9 +556,9 @@ a.lnkPremiere:active {
 
 /* Red Border on Card Hover */
 .cardOverlayContainer {
-	background: -webkit-radial-gradient(50% 50%, farthest-corner, rgba(30, 30, 30, .5) 50%, #2c2c2c 100%);
-	background: -o-radial-gradient(50% 50%, farthest-corner, rgba(30, 30, 30, .5) 50%, #2c2c2c 100%);
-	background: radial-gradient(farthest-corner at 50% 50%, rgba(16, 16, 16, .5) 75%, #000 100%);
+	background: -webkit-radial-gradient(50% 50%, farthest-corner, rgba(16, 16, 16, .5) 75%, #000 100%) !important;
+	background: -o-radial-gradient(50% 50%, farthest-corner, rgba(16, 16, 16, .5) 75%, #000 100%) !important;
+	background: radial-gradient(farthest-corner at 50% 50%, rgba(16, 16, 16, .5) 75%, #000 100%) !important;
 	-moz-box-shadow: 0 0 5px #300000 !important;
 	-webkit-box-shadow: 0 0 5px #300000 !important;
 	box-shadow: 0px 0px 5px #300000 !important;
