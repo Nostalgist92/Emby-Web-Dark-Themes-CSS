@@ -80,12 +80,41 @@ _________________________________________________________________________
 
 /* 1.1.2 Rectangles */
 .raised {
-  background: #404040 !important;
-  color: #fff !important; }
+    background: rgba(64,0,0,.50) !important;
+    border: 1px solid #000;
+    color: #fff !important;
+}
 
+.raised:hover {
+    background: #131313 !important;
+    border: 1px solid #000;
+	-moz-box-shadow: 0 0 5px #300000 !important;
+	-webkit-box-shadow: 0 0 5px #300000 !important;
+	box-shadow: 0px 0px 5px #300000 !important;
+    color: #fff !important;
+}
+
+/* Cancel Button */
+.raised.cancel.block.btnCancel.emby-button {
+    color: #990000 !important;
+}
+
+/* Cancel Button: Hover */
+.raised.cancel.block.btnCancel.emby-button:hover {
+    background: #900000 !important;
+    border: 1px solid #000;
+	-moz-box-shadow: 0 0 5px #300000 !important;
+	-webkit-box-shadow: 0 0 5px #300000 !important;
+	box-shadow: 0px 0px 5px #300000 !important;
+    color: #fff !important;
+}
+
+/* Submit Button */
 .button-submit, .button-accent {
   background: #990000 !important;
   color: #fff; }
+
+/* Submit Button: Hover */
 
 .raised-mini.emby-button {
   background: #990000 !important;
@@ -394,8 +423,7 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
 /* 2.2.3 Others	*/
 /* Dashboard Items */
 .listItem-border {
-    border-bottom-width: .1em;
-    border-bottom-style: solid;
+    border: none !important;
 }
 
 /* CSS Box */
@@ -499,16 +527,9 @@ a.lnkPremiere:active {
 
 
 /*
-__________________________________________________________________________
+===========================================================================
 ---------------------------- Additional Tweaks ---------------------------
 */
-/* Red Border on Card Hover */
-.cardOverlayContainer {
-    background: -webkit-radial-gradient(50% 50%,farthest-corner,rgba(30,30,30,.5) 50%,#2c2c2c 100%);
-    background: -o-radial-gradient(50% 50%,farthest-corner,rgba(30,30,30,.5) 50%,#2c2c2c 100%);
-    background: radial-gradient(farthest-corner at 50% 50%,rgba(16,16,16,.5) 75%,#000 100%);
-    border: 2px solid #300000;
-}
 
 /* Black Border on Cards */
 .cardContent-button {
@@ -517,23 +538,61 @@ __________________________________________________________________________
     /* border: 2px solid #000 !important; */
 }
 
+/* Red Border on Card Hover */
+.cardOverlayContainer {
+	background: -webkit-radial-gradient(50% 50%, farthest-corner, rgba(30, 30, 30, .5) 50%, #2c2c2c 100%);
+	background: -o-radial-gradient(50% 50%, farthest-corner, rgba(30, 30, 30, .5) 50%, #2c2c2c 100%);
+	background: radial-gradient(farthest-corner at 50% 50%, rgba(16, 16, 16, .5) 75%, #000 100%);
+	-moz-box-shadow: 0 0 5px #300000 !important;
+	-webkit-box-shadow: 0 0 5px #300000 !important;
+	box-shadow: 0px 0px 5px #300000 !important;
+	/* border: 2px solid #300000; */
+	border: none !important;
+
+}
+
 .emby-select-withcolor:focus {
 	border-color: #660000 !important;
-}
-
-.raised {
-    background: rgba(64,0,0,.50) !important;
-    border: 1px solid #000;
-    color: #fff !important;
-}
-
-.raised:hover {
-    background: #131313 !important;
-    border: 1px solid #000;
-    color: #fff !important;
 }
 
 .paperList, .visualCardBox, .formDialogHeader:not(.formDialogHeader-clear) {
     background-color: rgba(21,21,21,.9) !important;
     border: 1px solid #000;
+}
+
+.sessionCardFooter {
+    border-top: 1px solid #101010!important;
+    background-color: #131313;
+}
+/* =========================================================================== */
+/* Login Page Tweaks*/
+/* Set images to grayscale */
+#loginPage .card {
+	-webkit-filter: grayscale(90%);
+	filter: grayscale(90%);
+
+}
+
+/* Transition images to color on hover*/
+#loginPage .card:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	transform: scale(1.1);
+}
+
+/* Add border to login page images */
+#loginPage .cardScalable {
+	border: 1px solid #000;
+}
+
+/* Add glow to login page images on hover*/
+#loginPage .cardScalable:hover {
+	-moz-box-shadow: 0 0 5px #600000;
+	-webkit-box-shadow: 0 0 5px #600000;
+	box-shadow: 0px 0px 5px #600000;
 }
