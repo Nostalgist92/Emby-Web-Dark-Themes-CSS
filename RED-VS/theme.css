@@ -615,11 +615,12 @@ a.lnkPremiere:active {
 /* =========================================================================== */
 /* OSD */
 .osdHeader {
-    background-color: rgba(0,0,0,.3)!important;
+    background-color: rgba(0,0,0,.3) !important;
     background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.8)),to(rgba(0,0,0,0)))!important;
-    background: -webkit-linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0))!important;
-    background: -o-linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0))!important;
-    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0))!important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8)));
+    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8));
+    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8));
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3));
     border-bottom: transparent !important;
 }
 
