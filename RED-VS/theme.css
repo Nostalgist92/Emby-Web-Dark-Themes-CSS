@@ -111,10 +111,19 @@ _________________________________________________________________________
 
 /* Submit Button */
 .button-submit, .button-accent {
-  background: #990000 !important;
-  color: #fff; }
+	background: #006600 !important;
+	color: #fff; }
+*/
 
 /* Submit Button: Hover */
+raised.button-submit.block.emby-button {
+    background: #090 !important;
+    border: 1px solid #000;
+	-moz-box-shadow: 0 0 5px #003000 !important;
+	-webkit-box-shadow: 0 0 5px #003000 !important;
+	box-shadow: 0px 0px 5px #003000 !important;
+    color: #fff !important;
+}
 
 .raised-mini.emby-button {
   background: #990000 !important;
