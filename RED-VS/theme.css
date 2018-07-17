@@ -254,6 +254,17 @@ progress {
   background: #990000 !important; }
 
 /* Main Drawers */
+.dashboardDocument .mainDrawer {
+    background-color: #131313 !important;
+}
+
+.navMenuOption.navMenuOption-selected {
+    background: #191919 !important;
+    color: #990000 !important;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
 .navMenuDivider {
   background: #262626 !important; }
 
@@ -261,7 +272,9 @@ progress {
   border-bottom: 1px solid #262626 !important; }
 
 .mainDrawer {
-  background: #181818 !important; }
+    border-right: 1px solid #000;
+    background-color: rgba(13,13,13,0.90)!important;
+}
 
 .sidebarHeader {
   color: #bbbbbb !important; }
@@ -325,12 +338,12 @@ div.jstree-wholerow.jstree-wholerow-hovered {
 /* 2.2.1 Scrollbars */
 /* Google Chrome */
 ::-webkit-scrollbar-corner {
-  background-color: #3B3B3B; }
+  background-color: #202020; }
 
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  background-color: #3B3B3B; }
+  background-color: #202020; }
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 2px;
@@ -349,7 +362,7 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar {
 div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  background: #888888; }
+  background: #080808; }
 
 /* Google Chrome - Filter Dialog */
 .dynamicFilterDialog::-webkit-scrollbar-corner {
@@ -363,7 +376,7 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
 .dynamicFilterDialog::-webkit-scrollbar-thumb {
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  background: #888888; }
+  background: #080808; }
 
 /* 2.2.2 Logos */
 /* Login Page */
@@ -379,6 +392,12 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
   background-image: url(https://cdn.rawgit.com/Nostalgist92/Emby-Dark-Themes-Resources/master/images/logos-and-icons/RED-VS/logo.png) !important; }
 
 /* 2.2.3 Others	*/
+/* Dashboard Items */
+.listItem-border {
+    border-bottom-width: .1em;
+    border-bottom-style: solid;
+}
+
 /* CSS Box */
 #txtCustomCss {
   height: 300px !important;
@@ -386,10 +405,15 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
 
 /* Select Box */
 select option {
-  background-color: #2b2b2b !important;
+  background-color: #202020 !important;
   color: #ffffff !important; }
 
 /* Dialogs */
+.dialog {
+    background: rgba(8,8,8,0.95)!important;
+    border: 2px solid #000 !important;
+}
+
 .formDialogHeader:not(.formDialogHeader-clear),
 .formDialogFooter:not(.formDialogFooter-clear) {
   background-color: #121212 !important;
@@ -397,11 +421,14 @@ select option {
 
 /* Headers */
 .skinHeader {
-  background-color: #080808 !important;
+  background-color: rgba(16,16,16,.9) !important;
+  border-bottom: 1px solid #000;
   color: #fff !important; }
 
 .skinHeader-withBackground {
-  background-color: #080808 !important; }
+    background-color: rgba(16,16,16,.9) !important;
+    border-bottom: 1px solid #000;
+}
 
 @supports (backdrop-filter: blur(1.5em)) or (-webkit-backdrop-filter: blur(1.5em)) {
   .skinHeader-blurred {
@@ -419,7 +446,7 @@ select option {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent) !important; }
 
 .appfooter {
-  background: #080808 !important;
+  background-color: rgba(16,16,16,.9) !important;
   color: #fff !important; }
 
 @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
@@ -469,3 +496,44 @@ a.lnkPremiere:hover {
 .searchSuggestionsList a:active, .noItemsMessage a:active,
 a.lnkPremiere:active {
   color: #660000 !important; }
+
+
+/*
+__________________________________________________________________________
+---------------------------- Additional Tweaks ---------------------------
+*/
+/* Red Border on Card Hover */
+.cardOverlayContainer {
+    background: -webkit-radial-gradient(50% 50%,farthest-corner,rgba(30,30,30,.5) 50%,#2c2c2c 100%);
+    background: -o-radial-gradient(50% 50%,farthest-corner,rgba(30,30,30,.5) 50%,#2c2c2c 100%);
+    background: radial-gradient(farthest-corner at 50% 50%,rgba(16,16,16,.5) 75%,#000 100%);
+    border: 2px solid #300000;
+}
+
+/* Black Border on Cards */
+.cardContent-button {
+    /* border: 0 !important; */
+    border: 1px solid #000 !important;
+    /* border: 2px solid #000 !important; */
+}
+
+.emby-select-withcolor:focus {
+	border-color: #660000 !important;
+}
+
+.raised {
+    background: rgba(64,0,0,.50) !important;
+    border: 1px solid #000;
+    color: #fff !important;
+}
+
+.raised:hover {
+    background: #131313 !important;
+    border: 1px solid #000;
+    color: #fff !important;
+}
+
+.paperList, .visualCardBox, .formDialogHeader:not(.formDialogHeader-clear) {
+    background-color: rgba(21,21,21,.9) !important;
+    border: 1px solid #000;
+}
