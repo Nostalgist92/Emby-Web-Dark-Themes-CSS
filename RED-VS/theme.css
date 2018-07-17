@@ -67,6 +67,9 @@ _________________________________________________________________________
 /* ------------------------ 1. ACCENT COLORS ------------------------- */
 /* ----- 1.1 Buttons ----- */
 /* 1.1.1 Checkboxes */
+.emby-checkbox:checked+span+span+.checkboxOutline, .itemProgressBarForeground {
+    background-color: #990000;
+}
 .emby-checkbox:checked + span + span + .checkboxOutline > .checkboxOutlineTick {
   background-color: #990000 !important; }
 
@@ -110,14 +113,14 @@ _________________________________________________________________________
 }
 
 /* Submit Button */
-.button-submit, .button-accent {
-	background: #006600 !important;
-	color: #fff; }
-*/
+.raised.button-submit.block.emby-button {
+    background: #006600 !important;
+    color: #fff !important;
+}
 
 /* Submit Button: Hover */
-raised.button-submit.block.emby-button {
-    background: #090 !important;
+.raised.button-submit.block.emby-button:hover {
+    background: #009900 !important;
     border: 1px solid #000;
 	-moz-box-shadow: 0 0 5px #003000 !important;
 	-webkit-box-shadow: 0 0 5px #003000 !important;
@@ -605,3 +608,9 @@ a.lnkPremiere:active {
 	-webkit-box-shadow: 0 0 5px #600000;
 	box-shadow: 0px 0px 5px #600000;
 }
+
+
+
+
+
+
