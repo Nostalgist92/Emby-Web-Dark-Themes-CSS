@@ -1,0 +1,760 @@
+/*
+_________________________________________________________________________
+------------------------- COLOR HEX & RGB CODES -------------------------
+
+	RED 	    : #009900 & (0, 153, 0)
+	DARK COLOR  : #006600
+
+	ORANGE      : #FF8000 & (255, 128, 0)
+	DARK COLOR  : #BF6000
+
+	ORANGE PLEX : #CC7B19 & (204, 123, 25)
+	DARK COLOR  : #B35A00
+
+	YELLOW      : #BDBD00 & (189, 189, 0)
+	DARK COLOR  : #757500
+
+	GREEN       : #52B54B & (82, 181, 75)
+	DARK COLOR  : #3E8437
+
+	BLUE	    : #4285F4 & (66, 133, 244)
+	DARK COLOR  : #0C57D6
+
+	BLUE DARK	: #3367d6 & (51,103,214)
+	BLUE DARK (DARK) : #1f4698
+
+	PURPLE      : #673AB7 & (103, 58, 183)
+	DARK COLOR  : #3F2471
+
+	GRAY	    : #7F7F7F & (127, 127, 127)
+	DARK COLOR  : #535353
+
+	PINK	    : #F707DF & (247, 7, 223)
+	DARK COLOR  : #C604B3
+
+*/
+/*
+_________________________________________________________________________
+----------------------- EMBY THEME : ACCENT COLORS ----------------------
+
+                 ---------- Table of Contents ----------
+
+	1. ACCENT COLORS
+	   1.1 Buttons
+	       1.1.1 Checkboxes
+		   1.1.2 Rectangles
+		   1.1.3 Links & Text buttons
+		   1.1.4 Others
+	   1.2 Details
+	       1.2.1 Circles
+		   1.2.2 Indicators
+		   1.2.3 Fonts
+		   1.2.4 Icons
+		   1.2.5 Dialogs & Action Sheets
+		   1.2.6 Others
+	   1.3 Fixes
+
+	2. MISCELLANEOUS MODIFICATIONS
+	   2.1 Buttons
+	   2.2 Details
+	       2.2.1 Scrollbars
+	       2.2.2 Logos
+	       2.2.3 Others
+	   2.3 Fixes
+	       2.3.1 Dark Colors
+
+*/
+/* ------------------------ 1. ACCENT COLORS ------------------------- */
+/* ----- 1.1 Buttons ----- */
+/* 1.1.1 Checkboxes */
+.emby-checkbox:checked+span+span+.checkboxOutline,.itemProgressBarForeground {
+	background-color: #090;
+}
+
+.emby-checkbox:checked + span + span + .checkboxOutline > .checkboxOutlineTick {
+	background-color: #090 !important;
+}
+
+.emby-checkbox:checked+span+span+.checkboxOutline>.checkboxIcon-checked {
+	background-color: #090;
+}
+
+.emby-checkbox:checked + span + span + .checkboxOutline,.progressring-spiner {
+	border-color: #090 !important;
+}
+
+.emby-checkbox:focus + span + .emby-checkbox-focushelper {
+	background-color: #090 !important;
+	opacity: 0.26 !important;
+}
+
+/* 1.1.2 Rectangles */
+.raised {
+	background: rgba(0,64,0,.50) !important;
+	border: 1px solid #000;
+	color: #fff !important;
+}
+
+.raised:hover {
+	background: #131313 !important;
+	border: 1px solid #000;
+	-moz-box-shadow: 0 0 5px #030 !important;
+	-webkit-box-shadow: 0 0 5px #030 !important;
+	box-shadow: 0 0 5px #030 !important;
+	color: #fff !important;
+}
+
+/* Cancel Button */
+.raised.cancel.block.btnCancel.emby-button {
+	color: #900000 !important;
+}
+
+/* Cancel Button: Hover */
+.raised.cancel.block.btnCancel.emby-button:hover {
+	background: #900000 !important;
+	border: 1px solid #000;
+	-moz-box-shadow: 0 0 5px #300000 !important;
+	-webkit-box-shadow: 0 0 5px #300000 !important;
+	box-shadow: 0 0 5px #300000 !important;
+	color: #fff !important;
+}
+
+/* Submit Button */
+.raised.button-submit.block.emby-button {
+	background: #060 !important;
+	color: #fff !important;
+}
+
+/* Submit Button: Hover */
+.raised.button-submit.block.emby-button:hover {
+	background: #090 !important;
+	border: 1px solid #000;
+	-moz-box-shadow: 0 0 5px #003000 !important;
+	-webkit-box-shadow: 0 0 5px #003000 !important;
+	box-shadow: 0 0 5px #003000 !important;
+	color: #fff !important;
+}
+
+.raised-mini.emby-button {
+	background: #090 !important;
+	color: #fff !important;
+}
+
+/* Restart */
+.btnRestartContainer.emby-button {
+	background: #090 !important;
+	color: #fff;
+}
+
+/* Play & Resume */
+.btnPlaySimple.emby-button {
+	background: #090 !important;
+	color: #fff;
+}
+
+.btnResume.emby-button {
+	background: #060 !important;
+	color: #fff;
+}
+
+/* 1.1.3 Links & Text buttons */
+.button-link,.button-flat-accent,.button-accent-flat,.textlink {
+	color: #090 !important;
+}
+
+.button-link:hover,.button-flat-accent:hover,.button-accent-flat:hover,.textlink:hover {
+	color: #9b9b9b !important;
+}
+
+.button-link:active,.button-flat-accent:active,.button-accent-flat:active,.textlink:active {
+	color: #060 !important;
+}
+
+/* Top Header */
+.emby-tab-button-active {
+	color: #090 !important;
+}
+
+/* 1.1.4 Others */
+.emby-button>i:hover {
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-in-out;
+	transform: scale(1.5);
+	-moz-text-shadow: 0 0 5px #060;
+	-webkit-text-shadow: 0 0 5px #060;
+	text-shadow: 0 0 5px #060;
+}
+
+/* Alpha Picker */
+.alphaPickerButton-selected,.alphaPickerButton-tv:focus {
+	background-color: #090 !important;
+	color: #fff !important;
+}
+
+/* Radio Buttons */
+.mdl-radio__inner-circle {
+	background: #090 !important;
+}
+
+.mdl-radio__button:checked + .mdl-radio__label + .mdl-radio__outer-circle {
+	border: 2px solid #090 !important;
+}
+
+.mdl-radio__button:checked:focus + .mdl-radio__label + .mdl-radio__outer-circle + .mdl-radio__inner-circle {
+	-webkit-box-shadow: 0 0 0 10px rgba(0,153,0,0.26) !important;
+	box-shadow: 0 0 0 10px rgba(0,153,0,0.26) !important;
+}
+
+/* Control Group Buttons */
+div[data-role="controlgroup"] a.ui-btn-active[data-role='button'] {
+	background: #090 !important;
+	color: #fff !important;
+}
+
+/* ----- 1.2 Details ----- */
+/* 1.2.1 Circles */
+/*.listItemIcon:not(.listItemIcon-transparent) {
+    background-color: $accent-color  !important; }*/
+.dashboardSection i.listItemIcon.md-icon {
+	background-color: #090 !important;
+}
+
+.scheduledTaskPaperIconItem[data-status="Running"] i.listItemIcon.md-icon {
+	background-color: #060 !important;
+}
+
+/* Focus Helper circles */
+.paper-icon-button-light:focus {
+	color: #060 !important;
+	background-color: rgba(0,96,0,.3) !important;
+}
+
+.paper-icon-button-light:hover {
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-in-out;
+	transform: scale(1.5);
+	-moz-text-shadow: 0 0 5px #060;
+	-webkit-text-shadow: 0 0 5px #060;
+	text-shadow: 0 0 5px #060;
+}
+
+/* 1.2.2 Indicators */
+.countIndicator,.playedIndicator {
+	background: #090 !important;
+}
+
+.levelNormal {
+	background-color: #090 !important;
+}
+
+.fullSyncIndicator {
+	background: #090 !important;
+	color: #fff;
+}
+
+.playstatebutton-played i,.ratingbutton-withrating i {
+	color: #090 !important;
+}
+
+p#pUpToDate i.md-icon {
+	background-color: #090 !important;
+}
+
+/* Loading Spinners */
+.mdl-spinner__layer-1,.mdl-spinner__layer-2,.mdl-spinner__layer-3,.mdl-spinner__layer-4 {
+	border-color: #090 !important;
+}
+
+.progressring-spiner {
+	border: .25em solid #090 !important;
+}
+
+/* 1.2.3 Fonts */
+.selectLabelFocused,.textareaLabelFocused,.inputLabelFocused {
+	color: #090 !important;
+}
+
+.secondary.listItemBodyText span,div#divRunningTasks span {
+	color: #090 !important;
+}
+
+/* 1.2.4 Icons */
+.starIcon,.mediaInfoTimerIcon {
+	color: #090 !important;
+}
+
+/* Top Header */
+.btnActiveCast {
+	color: #090 !important;
+}
+
+/* Now Playing Bar & Now Playing Page */
+.repeatActive,button.btnCommand.repeatToggleButton.autoSize.nowPlayingPageRepeatActive {
+	color: #090 !important;
+}
+
+/* 1.2.5 Dialogs & Action Sheets */
+/* 1.2.6 Others */
+/* General Accent Color Modifications */
+:focus {
+	outline: #090 auto 5px;
+}
+
+select:focus {
+	border-color: #090 !important;
+}
+
+::selection {
+	background-color: #060 !important;
+}
+
+.emby-input:focus,.emby-textarea:focus {
+	border-color: #090 !important;
+}
+
+/* Google Now Playing Bar & Now Playing Page */
+.iconOsdProgressInner,.mdl-slider__background-lower,.sliderBubble,.mdl-slider::-webkit-slider-thumb {
+	background: #090 !important;
+}
+
+.mdl-slider:focus::-webkit-slider-thumb {
+	-webkit-box-shadow: 0 0 0 10px rgba(0,153,0,0.26);
+	box-shadow: 0 0 0 10px rgba(0,153,0,0.26) !important;
+}
+
+/* Firefox Now Playing Bar & Now Playing Page */
+.mdl-slider::-moz-range-thumb,.mdl-slider::-moz-range-progress {
+	background: #090 !important;
+}
+
+.mdl-slider:focus::-moz-range-thumb {
+	box-shadow: 0 0 0 10px rgba(0,153,0,0.26) !important;
+}
+
+/* Progress Bars */
+.itemProgressBarForeground {
+	background-color: #090 !important;
+}
+
+.taskProgressInner {
+	background: #090 !important;
+}
+
+/* Google Progress Bars */
+progress::-webkit-progress-value {
+	background: #090 !important;
+}
+
+/* Firefox Progress Bars */
+progress::-moz-progress-bar {
+	background: #090 !important;
+}
+
+/* Edge Progress Bars */
+progress {
+	background: #090 !important;
+}
+
+/* Main Drawers */
+.dashboardDocument .mainDrawer {
+	background-color: #131313 !important;
+}
+
+.navMenuOption.navMenuOption-selected {
+	background: #191919 !important;
+	color: #090 !important;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.navMenuDivider {
+	background: #262626 !important;
+}
+
+.adminDrawerLogo {
+	border-bottom: 1px solid #262626 !important;
+}
+
+.mainDrawer {
+	border-right: 1px solid #000;
+	background-color: rgba(13,13,13,0.90) !important;
+}
+
+.sidebarHeader {
+	color: #bbb !important;
+}
+
+.navMenuOption {
+	color: #fff !important;
+}
+
+.navMenuOption.navMenuOption-selected {
+	background: #252528 !important;
+	color: #090 !important;
+}
+
+.navMenuOption:hover {
+	background: #252528 !important;
+	color: #9b9b9b !important;
+}
+
+/* Metadata Editor */
+div.jstree-wholerow.jstree-wholerow-clicked:hover,div.jstree-wholerow.jstree-wholerow-clicked,div.jstree-wholerow.jstree-wholerow-hovered {
+	background: #252528 !important;
+}
+
+.jstree-anchor.jstree-clicked,.jstree-anchor.jstree-clicked.jstree-hovered {
+	background: #252528 !important;
+	color: #090 !important;
+}
+
+/* Multi-select */
+.itemSelectionPanel {
+	border: 1px solid #090 !important;
+}
+
+.selectionCommandsPanel {
+	background: #090 !important;
+	color: #fff;
+}
+
+/* upNextDialog */
+.upNextDialog-countdownText {
+	color: #090 !important;
+}
+
+/* Selection Bars */
+.emby-select-selectionbar,.emby-textarea-selectionbar,.emby-input-selectionbar {
+	background-color: #090 !important;
+}
+
+/* Media Info Detail Image */
+.itemDetailImage.loaded:hover {
+	border: 1px solid #090 !important;
+}
+
+/* 1.3 Fixes */
+/* ------------------ 2. MISCELLANEOUS MODIFICATIONS ----------------- */
+/* ----- 2.1 Buttons ----- */
+/* Circles */
+.fab {
+	background-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+/* ----- 2.2 Details ----- */
+/* 2.2.1 Scrollbars */
+/* Google Chrome */
+::-webkit-scrollbar-corner {
+	background-color: #202020;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #888;
+}
+
+/* Google Chrome - Dashboard Drawer */
+div.scrollContainer.smoothScrollY::-webkit-scrollbar-corner {
+	background-color: transparent !important;
+}
+
+div.scrollContainer.smoothScrollY::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	background-color: transparent !important;
+}
+
+div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #080808;
+}
+
+/* Google Chrome - Filter Dialog */
+.dynamicFilterDialog::-webkit-scrollbar-corner {
+	background-color: transparent !important;
+}
+
+.dynamicFilterDialog::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	background-color: transparent !important;
+}
+
+.dynamicFilterDialog::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #080808;
+}
+
+/* 2.2.2 Logos */
+/* Login Page */
+.imgLogoIcon {
+	content: url(https://cdn.rawgit.com/Nostalgist92/Emby-Dark-Themes-Resources/master/images/logos-and-icons/RED-VS/logo.png) !important;
+}
+
+/* Main Drawer Mobile */
+.adminDrawerLogo img {
+	content: url(https://cdn.rawgit.com/Nostalgist92/Emby-Dark-Themes-Resources/master/images/logos-and-icons/RED-VS/logo.png) !important;
+}
+
+/* Home Page */
+.pageTitleWithLogo {
+	background-image: url(https://cdn.rawgit.com/Nostalgist92/Emby-Dark-Themes-Resources/master/images/logos-and-icons/RED-VS/logo.png) !important;
+}
+
+/* 2.2.3 Others	*/
+/* Dashboard Items */
+.listItem-border {
+	border: none !important;
+}
+
+/* CSS Box */
+#txtCustomCss {
+	height: 300px !important;
+	overflow-y: scroll !important;
+}
+
+/* Select Box */
+select option {
+	background-color: #202020 !important;
+	color: #fff !important;
+}
+
+/* Dialogs */
+.dialog {
+	background: rgba(8,8,8,0.95) !important;
+	border: 2px solid #000 !important;
+}
+
+.formDialogHeader:not(.formDialogHeader-clear),.formDialogFooter:not(.formDialogFooter-clear) {
+	background-color: #121212 !important;
+	color: #fff;
+}
+
+/* Headers */
+.skinHeader {
+	background-color: rgba(16,16,16,.9) !important;
+	border-bottom: 1px solid #000;
+	color: #fff !important;
+}
+
+.skinHeader-withBackground {
+	background-color: rgba(16,16,16,.9) !important;
+	border-bottom: 1px solid #000;
+}
+
+@supports (backdrop-filter: blur(1.5em)) or (-webkit-backdrop-filter: blur(1.5em)) {
+.skinHeader-blurred {
+	background:rgba(20,20,20,0.7) !important;
+	-webkit-backdrop-filter:blur(1.5em) !important;
+	backdrop-filter:blur(1.5em) !important; }
+}
+
+.skinHeader.semiTransparent {
+	-webkit-backdrop-filter: none !important;
+	backdrop-filter: none !important;
+	background-color: rgba(0,0,0,0.4) !important;
+	background-image: 0 color-stop(10%,transparent)) !important;
+	background-image: 0 10% transparent) !important;
+	background-image: 0 10% transparent) !important;
+	background-image: 0 10% transparent) !important;
+	background-image: linear-gradient(tobottom,rgba(0,0,0,0.7) 10% transparent) !important;
+}
+
+.appfooter {
+	background-color: rgba(16,16,16,.9) !important;
+	color: #fff !important;
+}
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+.appfooter-blurred {
+	background:rgba(24,24,24,0.7) !important;
+	-webkit-backdrop-filter:blur(20px) !important;
+	backdrop-filter:blur(20px) !important; }
+}
+
+/* TV Global Modifications */
+.emby-tab-button-active.emby-button-tv {
+	color: #fff !important;
+}
+
+.guide-channelHeaderCell,.guide-channelTimeslotHeader {
+	background: #2e2e2e !important;
+}
+
+.guide-programTextIcon {
+	color: #1e1e1e !important;
+	background: #555 !important;
+}
+
+.guide-headerTimeslots {
+	color: #ccc !important;
+}
+
+/* ----- 2.3 Fixes ----- */
+/* 2.3.1 Dark Colors */
+.autoorganizetable tbody tr:nth-child(odd) td,.autoorganizetable tbody tr:nth-child(odd) th {
+	background-color: #222326 !important;
+}
+
+.autoorganizetable > .table > tbody > tr {
+	border: 1px solid #222326 !important;
+}
+
+/*
+_____________________________________________________________________
+
+    Emby Dark Themes is maintained by Ben Z (BenZuser)
+    with the contribution of Happy2Play.
+_____________________________________________________________________
+
+*/
+/* TEMPORARY FIXES */
+/* Links */
+.searchSuggestionsList a,.noItemsMessage a,a.lnkPremiere {
+	color: #090 !important;
+}
+
+.searchSuggestionsList a:hover,.noItemsMessage a:hover,a.lnkPremiere:hover {
+	color: #9b9b9b !important;
+}
+
+.searchSuggestionsList a:active,.noItemsMessage a:active,a.lnkPremiere:active {
+	color: #060 !important;
+}
+
+/*
+===========================================================================
+---------------------------- Additional Tweaks ---------------------------
+*/
+/* Black Border on Cards */
+.cardContent-button {
+/* border: 0  !important; */
+	border: /* border: 2px solid #000  !important; */
+1px solid #000 !important;
+}
+
+/* Red Border on Card Hover */
+.cardOverlayContainer {
+	background: -webkit-radial-gradient(50% 50%, farthest-corner, rgba(16, 16, 16, .5) 75%, #000 100%)  !important;
+	background: -o-radial-gradient(50% 50%, farthest-corner, rgba(16, 16, 16, .5) 75%, #000 100%)  !important;
+	background: radial-gradient(farthest-corner at 50% 50%, rgba(16, 16, 16, .5) 75%, #000 100%)  !important;
+	-moz-box-shadow: 0 0 5px #003000 !important;
+	-webkit-box-shadow: 0 0 5px #003000 !important;
+	box-shadow: 0 0 5px #003000 !important;
+/* border: 2px solid #300000; */
+	border: none !important;
+}
+
+.emby-select-withcolor:focus {
+	border-color: #060 !important;
+}
+
+.paperList,.visualCardBox,.formDialogHeader:not(.formDialogHeader-clear) {
+	background-color: rgba(21,21,21,.9) !important;
+	border: 1px solid #000;
+}
+
+.sessionCardFooter {
+	border-top: 1px solid #101010 !important;
+	background-color: #131313;
+}
+
+/* =========================================================================== */
+/* Login Page Tweaks */
+/* Set images to grayscale */
+#loginPage .card {
+	-webkit-filter: grayscale(90%);
+	filter: grayscale(90%);
+}
+
+/* Transition images to color on hover*/
+#loginPage .card:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	transform: scale(1.1);
+}
+
+/* Add border to login page images */
+#loginPage .cardScalable {
+	border: 1px solid #000;
+}
+
+/* Add glow to login page images on hover*/
+#loginPage .cardScalable:hover {
+	-moz-box-shadow: 0 0 5px #060;
+	-webkit-box-shadow: 0 0 5px #060;
+	box-shadow: 0 0 5px #060;
+}
+
+/* =========================================================================== */
+/* OSD */
+.osdHeader {
+	background-color: rgba(0,0,0,.3) !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.8)),to(rgba(0,0,0,0)))  !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8)))  !important;
+    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8))  !important;
+    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8))  !important;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3))  !important;
+	border-bottom: transparent !important;
+}
+
+.videoOsdBottom {
+	background-color: rgba(0,0,0,.5) !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8)))  !important;
+    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8))  !important;
+    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8))  !important;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.8))  !important;
+	border-top: 1px solid #000 !important;
+}
+
+.osdPoster img {
+	border: 1px solid #300000 !important;
+}
+
+.osdPoster img:hover {
+	border: 2px solid #000 !important;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	transform: scale(1.05);
+	-moz-box-shadow: 0 0 5px #060;
+	-webkit-box-shadow: 0 0 5px #060;
+	box-shadow: 0 0 5px #060;
+}
+
+.mdl-slider-background-flex {
+	background: #202020 !important;
+}
+
+.mdl-slider-background-lower {
+	background-color: #060 !important;
+}
+
+/* =========================================================================== */

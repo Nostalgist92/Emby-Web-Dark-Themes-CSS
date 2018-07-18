@@ -479,11 +479,6 @@ select option {
   color: #ffffff !important; }
 
 /* Dialogs */
-.dialog {
-    background: rgba(8,8,8,0.95)!important;
-    border: 2px solid #000 !important;
-}
-
 .formDialogHeader:not(.formDialogHeader-clear),
 .formDialogFooter:not(.formDialogFooter-clear) {
   background-color: #121212 !important;
@@ -596,15 +591,6 @@ a.lnkPremiere:active {
 	border-color: #660000 !important;
 }
 
-.paperList, .visualCardBox, .formDialogHeader:not(.formDialogHeader-clear) {
-    background-color: rgba(21,21,21,.9) !important;
-    border: 1px solid #000;
-}
-
-.sessionCardFooter {
-    border-top: 1px solid #101010!important;
-    background-color: #131313;
-}
 /* =========================================================================== */
 /* Login Page Tweaks */
 /* Set images to grayscale */
@@ -640,25 +626,6 @@ a.lnkPremiere:active {
 
 /* =========================================================================== */
 /* OSD */
-.osdHeader {
-    background-color: rgba(0,0,0,.3) !important;
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.8)),to(rgba(0,0,0,0))) !important;
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8))) !important;
-    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
-    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)) !important;
-    border-bottom: transparent !important;
-}
-
-.videoOsdBottom {
-    background-color: rgba(0,0,0,.5) !important;
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8))) !important;
-    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
-    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.8)) !important;
-    border-top: 1px solid #000 !important;
-}
-
 .osdPoster img {
     border: 1px solid #300000 !important;
 }
@@ -674,10 +641,6 @@ border: 2px solid #000 !important;
 	-moz-box-shadow: 0 0 5px #600000;
 	-webkit-box-shadow: 0 0 5px #600000;
 	box-shadow: 0px 0px 5px #600000;
-}
-
-.mdl-slider-background-flex {
-	background: #202020 !important;
 }
 
 .mdl-slider-background-lower {

@@ -64,28 +64,33 @@ html {
     background: linear-gradient(to right, rgba(0, 0, 0, .99), rgba(0, 0, 0, .94), rgba(0, 0, 0, .5)) !important; }
 
 .paperList, .visualCardBox, .formDialogHeader:not(.formDialogHeader-clear) {
-    background-color: #222326 !important; }
+    background-color: rgba(21,21,21,.9) !important;
+    border: 1px solid #000; }
 
 .formDialogFooter:not(.formDialogFooter-clear) {
     background-color: #222326 !important;
-    border-top: 1px solid #222326 !important;	}
+    border-top: 1px solid #222326 !important; }
+
+.sessionNowPlayingInnerContent {
+    border: 1px solid #000 !important; }
 
 .sessionCardFooter {
-    border-top: 1px solid #383838 !important; }
+    border-top: 1px solid #101010!important;
+    background-color: #131313; }
 
 .collapseContent {
     background-color: #121212 !important; }
 
 .emby-select-withcolor {
     color: inherit;
-    background: #383838 !important;
+    background: #161616 !important;
     border: .07em solid rgba(0,0,0,.158);
     -webkit-border-radius: .15em;
     border-radius: .15em; }
 
 .emby-input, .emby-textarea {
     color: inherit;
-    background: #383838 !important;
+    background: #161616 !important;
     border: .07em solid rgba(0,0,0,.158);
     -webkit-border-radius: .15em;
     border-radius: .15em; }
@@ -93,10 +98,12 @@ html {
 /* 3.2.4 Dialogs & Action Sheets */
 /* 3.2.5 Others */
 .emby-textarea, .emby-input, .emby-collapsible-button, .emby-select {
-    border-color: #383838 !important; }
+    border-color: #000 !important; }
 
 .dialog {
-    background-color: #191919 !important; }
+    background: rgba(8,8,8,0.95)!important;
+    border: 2px solid #000 !important;
+}
 
 .actionSheetMenuItem:hover {
 	background-color: #222 !important; }
@@ -110,3 +117,28 @@ html {
 
 .detailTableBodyRow-shaded:nth-child(even), .listItem-shaded:nth-child(even) {
     background: rgba(30, 30, 30, 0.9) !important; }
+
+/* =========================================================================== */
+/* OSD */
+.osdHeader {
+    background-color: rgba(0,0,0,.3) !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.8)),to(rgba(0,0,0,0))) !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8))) !important;
+    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
+    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)) !important;
+    border-bottom: transparent !important;
+}
+
+.videoOsdBottom {
+    background-color: rgba(0,0,0,.5) !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.8))) !important;
+    background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
+    background: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)) !important;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.8)) !important;
+    border-top: 1px solid #000 !important;
+}
+
+.mdl-slider-background-flex {
+	background: #202020 !important;
+}
