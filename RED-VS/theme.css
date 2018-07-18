@@ -168,6 +168,18 @@ _________________________________________________________________________
   color: #990000 !important; }
 
 /* 1.1.4 Others */
+.emby-button>i:hover {
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all .3s ease-in-out;
+	transform: scale(1.5);
+	-moz-text-shadow: 0 0 5px #600000;
+	-webkit-text-shadow: 0 0 5px #600000;
+	text-shadow: 0px 0px 5px #600000;
+}
+
 /* Alpha Picker */
 .alphaPickerButton-selected, .alphaPickerButton-tv:focus {
   background-color: #990000 !important;
@@ -201,8 +213,20 @@ div[data-role="controlgroup"] a.ui-btn-active[data-role='button'] {
 
 /* Focus Helper circles */
 .paper-icon-button-light:focus {
-    color: #900000 !important;
-    background-color: rgba(144,0,0,.3) !important;
+    color: #600000 !important;
+    background-color: rgba(96,0,0,.3) !important;
+}
+
+.paper-icon-button-light:hover {
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all .3s ease-in-out;
+	transform: scale(1.5);
+	-moz-text-shadow: 0 0 5px #600000;
+	-webkit-text-shadow: 0 0 5px #600000;
+	text-shadow: 0px 0px 5px #600000;
 }
 
 /* 1.2.2 Indicators */
@@ -636,8 +660,22 @@ a.lnkPremiere:active {
 }
 
 .osdPoster img {
-    border: .08em solid #300000 !important;
+    border: 1px solid #300000 !important;
 }
+
+.osdPoster img:hover {
+border: 2px solid #000 !important;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	transform: scale(1.05);
+	-moz-box-shadow: 0 0 5px #600000;
+	-webkit-box-shadow: 0 0 5px #600000;
+	box-shadow: 0px 0px 5px #600000;
+}
+
 .mdl-slider-background-flex {
 	background: #202020 !important;
 }
