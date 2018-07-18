@@ -201,7 +201,9 @@ div[data-role="controlgroup"] a.ui-btn-active[data-role='button'] {
 
 /* Focus Helper circles */
 .paper-icon-button-light:focus {
-  color: #990000 !important; }
+    color: #900000 !important;
+    background-color: rgba(144,0,0,.3) !important;
+}
 
 /* 1.2.2 Indicators */
 .countIndicator, .playedIndicator {
