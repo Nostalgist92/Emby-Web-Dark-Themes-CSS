@@ -230,8 +230,22 @@ div[data-role="controlgroup"] a.ui-btn-active[data-role='button'] {
 }
 
 /* 1.2.2 Indicators */
+.countIndicator {
+	background: rgba(153, 0, 0, 0.75) !important;
+    border: 1px solid #000 !important;
+	border-radius: 40% !important;
+	height: 24px; }
+
 .countIndicator, .playedIndicator {
-  background: #990000 !important; }
+    background: rgba(153, 0, 0, 0.75) !important;
+    border: 1px solid #000 !important;
+	border-radius: 40% !important; }
+
+.cardIndicators {
+	border-radius: 40% !important;
+	box-shadow: 0 0 5px #000; }
+
+
 
 .levelNormal {
   background-color: #990000 !important; }

@@ -119,6 +119,10 @@ html {
     background: rgba(30, 30, 30, 0.9) !important; }
 
 /* =========================================================================== */
+/* Cards */
+.cardImageContainer {
+    border: 1px solid #000 !important; }
+/* =========================================================================== */
 /* OSD */
 .osdHeader {
     background-color: rgba(0,0,0,.3) !important;
